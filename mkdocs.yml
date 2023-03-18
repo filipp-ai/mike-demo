@@ -1,0 +1,89 @@
+site_name: "DataHeroes"
+site_description: "DataHeroes Coreset Library"
+site_url: "https://filipp-ai.github.io/mike-demo/"
+site_dir: "site"
+watch: [README.md]
+
+nav:
+- Home: README.md
+- Code Reference: reference/
+
+theme:
+  name: material
+  logo: logo.svg
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.top
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: blue
+    accent: purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+
+extra_css:
+- css/material.css
+- css/mkdocstrings.css
+
+markdown_extensions:
+- admonition
+- callouts:
+    strip_period: no
+- pymdownx.emoji
+- pymdownx.magiclink
+- pymdownx.snippets:
+    check_paths: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist
+- toc:
+    permalink: "¤"
+
+plugins:
+- search
+- markdown-exec
+- gen-files:
+    scripts:
+    - docs/gen_ref_nav.py
+- literate-nav:
+    nav_file: SUMMARY.md
+- coverage
+- section-index
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [skcoreset]
+        import:
+        - https://docs.python.org/3/objects.inv
+        - https://mkdocstrings.github.io/objects.inv
+        - https://mkdocstrings.github.io/griffe/objects.inv
+        options:
+          docstring_style: google
+          docstring_options:
+            ignore_init_summary: yes
+          merge_init_into_class: yes
+          separate_signature: yes
+          show_source: no
+          show_root_full_path: no
+          members: ['CoresetTreeService', 'CoresetTreeServiceLG']
+          filters: ["!^_[^_]", "!^explain", "!^.*tensor"]
+
+extra:
+  version:
+    provider: mike
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/pawamoy
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/pawamoy
