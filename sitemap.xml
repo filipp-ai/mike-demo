@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://filipp-ai.github.io/mike-demo/</loc>
+         <lastmod>2023-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://filipp-ai.github.io/mike-demo/installation/</loc>
+         <lastmod>2023-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://filipp-ai.github.io/mike-demo/usage/</loc>
+         <lastmod>2023-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://filipp-ai.github.io/mike-demo/reference/SUMMARY/</loc>
+         <lastmod>2023-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://filipp-ai.github.io/mike-demo/coverage/</loc>
+         <lastmod>2023-03-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
